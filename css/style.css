@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  width: 150px;
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+}
+
+nav a {
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+nav a:hover {
+  color: #c0c0c0;
+}
+
+.iconos {
+  display: flex;
+  gap: 20px;
+  font-size: 1.3rem;
+}
+.iconos a {
+  transition: color 0.3s;
+}
+.iconos a:hover {
+  color: #c0c0c0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.novedades {
+  padding: 60px;
+}
+
+.novedades h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contenedor-novedades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+
+.card-novedades {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-novedades a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.card-novedades:hover {
+  transform: translateY(-5px);
+}
+
+.card-novedades img {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+  display: block;
+}
+
+.card-novedades h3 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.card-novedades p {
+  font-size: 1rem;
+  padding: 0 10px;
+  line-height: 1.4;
+  text-align: center;
+  color: rgb(71, 69, 69);
+}
+
+/*# sourceMappingURL=style.css.map */
