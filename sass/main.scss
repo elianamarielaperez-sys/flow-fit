@@ -181,4 +181,17 @@ nav a:hover{
     text-align: center;
     color: $color-card-novedades-p;
 }
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 3rem;
+    color: #25D366;
+    z-index: 1000;
+    transition: $transition;
 
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
