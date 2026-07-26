@@ -50,6 +50,7 @@
 
     .contenedor-productos {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
 
     nav {
@@ -72,7 +73,7 @@
         justify-content: center;
     }
 
-    banner-categoria img {
+    .banner-categoria img {
         height: 250px;
     }
 
