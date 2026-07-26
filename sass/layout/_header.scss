@@ -1,0 +1,53 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins";
+
+header {
+    @include mixins.flex(space-between, center);
+
+    background-color: $color-negro;
+    color: $color-blanco;
+    padding: $padding-card $gap-nav;
+}
+
+.logo {
+    @include mixins.flex(space-between, center);
+
+    gap: $gap-logo;
+}
+
+.logo img {
+    width: $logo-width;
+}
+
+nav {
+    display: flex;
+    gap: $gap-nav;
+}
+
+nav a {
+    font-weight: bold;
+    transition: $transition;
+}
+
+nav a:hover {
+    color: $color-nav-hover;
+
+}
+
+nav a:active {
+    color: $color-nav-hover;
+}
+
+.iconos {
+    @include mixins.flex(space-between, center);
+    gap: $gap-iconos;
+    font-size: $font-size-iconos;
+
+    a {
+        transition: color 0.3s;
+
+        &:hover {
+            color: $color-nav-hover;
+        }
+    }
+}

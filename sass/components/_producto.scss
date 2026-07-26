@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+
+.detalle-producto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 60px;
+}
+
+.detalle-producto h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.carousel {
+    width: 100%;
+}
+
+.detalle-texto h4 {
+    margin: 20px 0 15px;
+}
+
+.detalle-texto li {
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 25px;
+}

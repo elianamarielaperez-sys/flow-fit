@@ -1,0 +1,14 @@
+@use "../utilities/variables" as *;
+
+body {
+    font-family: $font-general;
+    font-size: $font-size-base;
+    background-color: $color-blanco;
+    color: $color-negro;
+}
+
+h2 {
+    font-family: $font-general;
+    font-size: 2rem;
+    font-weight: bold;
+}

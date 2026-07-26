@@ -1,0 +1,7 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins";
+
+.formulario-contacto button {
+
+    @include mixins.boton($color-negro, $color-blanco);
+}

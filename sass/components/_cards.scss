@@ -1,0 +1,117 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins";
+
+.contenedor-novedades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $gap-grid;
+}
+
+.card-novedades {
+    background-color: $color-blanco;
+    border-radius: $radio-card;
+    overflow: hidden;
+    padding-bottom: $padding-card;
+    text-align: center;
+    box-shadow: $sombra-card;
+
+    @include mixins.hover-card;
+}
+
+.card-novedades a {
+    text-decoration: none;
+    color: $color-negro;
+    display: block;
+}
+
+.card-novedades img {
+    width: 100%;
+    height: $card-img-height;
+    object-fit: contain;
+
+    display: block;
+}
+
+.card-novedades h3 {
+    text-align: center;
+    margin-top: $padding-card;
+    margin-bottom: 10px;
+    font-size: $font-size-titulo-card;
+    color: $color-negro;
+}
+
+.card-novedades p {
+    font-size: $font-size-base;
+    padding: 0 10px;
+    line-height: 1.4;
+    text-align: center;
+    color: $color-texto-secundario;
+}
+
+.card-producto {
+    width: 100%;
+    background: $color-blanco;
+    border-radius: $radio-card;
+    box-shadow: $sombra-card;
+    overflow: hidden;
+    text-align: center;
+
+    @include mixins.hover-card;
+}
+
+.card-producto img {
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+}
+
+.card-producto h3 {
+    font-size: $font-size-titulo-card;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 10px 5px;
+}
+
+.card-producto p {
+    margin-bottom: 15px;
+    color: $color-texto-secundario;
+}
+
+.card-lifestyle {
+    background: $color-blanco;
+    border-radius: $radio-card;
+    box-shadow: $sombra-card;
+    overflow: hidden;
+    text-align: center;
+
+    @include mixins.hover-card;
+}
+
+.card-lifestyle img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-lifestyle h3 {
+    margin: 20px 15px 10px;
+    font-size: $font-size-titulo-card;
+}
+
+.card-lifestyle p {
+    margin: 0 15px 20px;
+    color: $color-texto-secundario;
+}
+
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.contenedor-lifestyle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}

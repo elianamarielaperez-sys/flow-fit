@@ -1,0 +1,67 @@
+@use "../utilities/variables" as *;
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.novedades {
+    padding: $padding-seccion;
+}
+
+.novedades h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.banner-categoria {
+    position: relative;
+}
+
+.banner-categoria img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.productos-categoria {
+    padding: 60px;
+}
+
+.productos-categoria h2 {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.lifestyle {
+    padding: 60px;
+}
+
+.lifestyle h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.nosotros {
+    padding: 80px 120px;
+    text-align: center;
+}
+
+.nosotros h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.nosotros p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 25px;
+}

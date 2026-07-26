@@ -1,0 +1,68 @@
+@use "../utilities/variables" as *;
+
+.contacto-pagina {
+    padding: 80px;
+    text-align: center;
+}
+
+.contacto-pagina h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.contacto-pagina>p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.contenedor-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.info-contacto,
+.formulario-contacto {
+    box-shadow: $sombra-card;
+    padding: 40px;
+    border-radius: $radio-card;
+}
+
+.info-contacto h3,
+.formulario-contacto h3 {
+    margin-bottom: 30px;
+}
+
+.info-contacto p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.info-contacto i {
+    margin-right: 10px;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: $font-general;
+}
+
+.formulario-contacto textarea {
+    height: 120px;
+    resize: none;
+}
+
+
+
