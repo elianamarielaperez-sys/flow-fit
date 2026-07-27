@@ -1,5 +1,3 @@
-
-
 @media (max-width: 1024px) {
 
     .contenedor-productos {
@@ -30,6 +28,11 @@
         height: 350px;
     }
 
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
     .contenedor-novedades {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
@@ -48,59 +51,105 @@
 
 @media (max-width: 768px) {
 
-    .contenedor-productos {
+    /* SECCIONES */
+    .novedades,
+    .productos-categoria,
+    .lifestyle {
+        padding: 30px 15px;
+    }
+
+
+    /* GRILLAS EN MOBILE */
+    .contenedor-novedades,
+    .contenedor-productos,
+    .contenedor-lifestyle {
+        display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
     }
 
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+
+    /* TARJETAS */
+    .card-novedades,
+    .card-producto,
+    .card-lifestyle {
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
     }
 
+
+    /* IMAGENES TARJETAS */
+    .card-novedades img,
+    .card-producto img {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+    }
+
+
+    .card-lifestyle img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+
+    /* TEXTOS TARJETAS */
+    .card-novedades h3,
+    .card-producto h3,
+    .card-lifestyle h3 {
+        font-size: 1rem;
+    }
+
+
+    .card-novedades p,
+    .card-producto p,
+    .card-lifestyle p {
+        font-size: 0.85rem;
+    }
+
+
+    /* BANNER */
+    .hero {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* MENU MOBILE */
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 0.65rem;
+    }
+
+    /* LOGO */
+    .logo img {
+        width: 130px;
+    }
+
+
+    /* DETALLE PRODUCTO */
     .detalle-producto {
         grid-template-columns: 1fr;
-        padding: 30px;
+        padding: 20px;
+        gap: 30px;
     }
 
-    footer {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
 
-    .iconos-redes {
-        justify-content: center;
-    }
-
-    .banner-categoria img {
-        height: 250px;
-    }
-
-    .contenedor-novedades {
-        grid-template-columns: 1fr;
-    }
-
-    .novedades {
-        padding: 30px;
-    }
-
-    .lifestyle {
-        padding: 30px;
-    }
-
-    .contenedor-lifestyle {
-        grid-template-columns: 1fr;
-    }
-
-    .nosotros {
-        padding: 30px 20px;
-    }
-
-    .nosotros p {
-        font-size: .95rem;
-    }
-
+    /* CONTACTO */
     .contenedor-contacto {
         grid-template-columns: 1fr;
     }
@@ -109,4 +158,32 @@
         padding: 40px 20px;
     }
 
+
+    /* FOOTER */
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+
+    .iconos-redes {
+        justify-content: center;
+    }
+
+
+    /* EVITAR SCROLL HORIZONTAL */
+    body {
+        overflow-x: hidden;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .carousel img {
+        height: 450px;
+        object-fit: contain;
+    }
 }
