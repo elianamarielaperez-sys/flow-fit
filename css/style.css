@@ -583,9 +583,11 @@ footer li {
     text-align: center;
     overflow-wrap: break-word;
   }
-  .carousel img {
-    height: 450px;
-    object-fit: contain;
+  .carousel {
+    max-width: 100%;
+  }
+  .carousel-item {
+    height: 300px;
   }
   .banner-categoria img {
     width: 100%;
@@ -593,6 +595,28 @@ footer li {
     object-fit: cover;
     object-position: center;
   }
+}
+.detalle-producto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.carousel {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+.carousel-item img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
 }
 
 /*# sourceMappingURL=style.css.map */
